@@ -8,11 +8,11 @@ public class Main {
         List<Toy> toyList = new ArrayList<>();
         Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
-
         while (true) {
             System.out.println("1. Добавить игрушку");
             System.out.println("2. Распечатать список игрушек");
             System.out.println("3. Начать розыгрыш");
+            System.out.println("4. Завершить розыгрыш");
 
             int command = scanner.nextInt();
             scanner.nextLine();
@@ -24,6 +24,9 @@ public class Main {
                         toyList.add(toy);
                     }
                     break;
+                case 4:
+                    System.out.println("Розыгрыш завершен!");
+                    System.exit(0);
                 case 2:
                     for (Toy t : toyList)
                         System.out.println(t);

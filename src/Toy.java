@@ -45,4 +45,3 @@ public class Toy {
         return toyList.get(rand.nextInt(toyList.size()));
     }
 }
-
